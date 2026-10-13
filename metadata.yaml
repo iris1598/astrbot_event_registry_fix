@@ -1,5 +1,5 @@
 name: astrbot_event_registry_fix
-desc: 修复 unique_session 下事件对象在 active_event_registry 中按旧 key 永久残留的内存泄漏（纯修复，无清理指令）
+desc: 修复 unique_session 会话隔离导致的 active_event_registry 事件泄漏、GroupChatContext 消息队列常驻膨胀及 RateLimit 锁泄漏
 version: v1.1.0
 author: Iris1598
 repo: "https://github.com/iris1598/astrbot_event_registry_fix"
